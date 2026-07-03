@@ -1,0 +1,41 @@
+﻿@keyframes island-image-loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.island-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--island-image-height);
+  overflow: hidden;
+}
+
+.island-image__skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: var(--island-image-height);
+  background-color: #f2f2f2;
+}
+
+.island-image__skeleton::after {
+  display: block;
+  width: 100%;
+  height: var(--island-image-height);
+  content: '';
+  background: linear-gradient(90deg, transparent, rgba(225, 225, 225, 0.753), transparent);
+  transform: translateX(-100%);
+  animation: island-image-loading 3s infinite;
+}
+
+.island-image__inner {
+  position: relative;
+  width: 100%;
+  height: var(--island-image-height);
+  transition: all 0.2s;
+}

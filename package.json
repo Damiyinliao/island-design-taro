@@ -1,0 +1,75 @@
+{
+  "name": "island-design-taro",
+  "version": "0.0.1",
+  "description": "Island Design components for Taro Vue.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./component-list": {
+      "types": "./dist/component-list.d.ts",
+      "import": "./dist/component-list.js",
+      "require": "./dist/component-list.cjs"
+    },
+    "./components/island-animate-modal": {
+      "types": "./dist/components/island-animate-modal/index.d.ts",
+      "import": "./dist/components/island-animate-modal/index.js",
+      "require": "./dist/components/island-animate-modal/index.cjs"
+    },
+    "./components/island-animate-modal/style.css": "./dist/style.css",
+    "./components/island-image": {
+      "types": "./dist/components/island-image/index.d.ts",
+      "import": "./dist/components/island-image/index.js",
+      "require": "./dist/components/island-image/index.cjs"
+    },
+    "./components/island-image/style.css": "./dist/style.css",
+    "./components/island-navbar": {
+      "types": "./dist/components/island-navbar/index.d.ts",
+      "import": "./dist/components/island-navbar/index.js",
+      "require": "./dist/components/island-navbar/index.cjs"
+    },
+    "./components/island-navbar/style.css": "./dist/style.css",
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "prepublishOnly": "pnpm run typecheck && pnpm run build"
+  },
+  "keywords": [
+    "taro",
+    "vue",
+    "components",
+    "island-design"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@tarojs/components": ">=4.2.0",
+    "@tarojs/taro": ">=4.2.0",
+    "vue": ">=3.3.0"
+  },
+  "devDependencies": {
+    "@tarojs/components": "4.2.0",
+    "@tarojs/taro": "4.2.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "typescript": "^5.1.0",
+    "vite": "^7.0.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vue": "^3.3.0",
+    "vue-tsc": "^3.0.0"
+  }
+}
