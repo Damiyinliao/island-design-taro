@@ -1,6 +1,6 @@
 {
   "name": "island-design-taro",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Island Design components for Taro Vue.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -58,6 +58,7 @@
   "scripts": {
     "build": "vite build",
     "typecheck": "vue-tsc --noEmit",
+    "release:npm": "powershell -ExecutionPolicy Bypass -File ./scripts/publish-npm.ps1",
     "prepublishOnly": "pnpm run typecheck && pnpm run build"
   },
   "keywords": [
