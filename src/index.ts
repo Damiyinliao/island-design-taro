@@ -1,9 +1,9 @@
-﻿import type { App } from 'vue'
+import type { App } from 'vue'
 import { componentList, components } from './component-list'
-import { IslandAnimateModal, IslandImage, IslandNavbar } from './components'
+import { IslandAnimateModal, IslandImage, IslandNavbar, IslandText } from './components'
 
-export { IslandAnimateModal, IslandImage, IslandNavbar, componentList }
-export type { IslandAnimateModalProps, IslandImageProps, IslandNavbarProps } from './components'
+export { IslandAnimateModal, IslandImage, IslandNavbar, IslandText, componentList }
+export type { IslandAnimateModalProps, IslandImageProps, IslandNavbarProps, IslandTextProps } from './components'
 
 export default {
   install(app: App) {

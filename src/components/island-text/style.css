@@ -1,0 +1,20 @@
+.island-text {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.island-text--one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.island-text--multiple-lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.island-text text {
+  display: block;
+}

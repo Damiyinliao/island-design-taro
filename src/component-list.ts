@@ -1,4 +1,4 @@
-﻿import { IslandAnimateModal, IslandImage, IslandNavbar } from './components'
+import { IslandAnimateModal, IslandImage, IslandNavbar, IslandText } from './components'
 
 export const componentList = [
   {
@@ -18,6 +18,12 @@ export const componentList = [
     path: 'island-animate-modal',
     title: '动画弹窗',
     component: IslandAnimateModal,
+  },
+  {
+    name: 'IslandText',
+    path: 'island-text',
+    title: '文本',
+    component: IslandText,
   },
 ] as const
 

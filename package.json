@@ -1,6 +1,6 @@
 {
   "name": "island-design-taro",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Island Design components for Taro Vue.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -24,6 +24,11 @@
       "import": "./dist/component-list.js",
       "require": "./dist/component-list.cjs"
     },
+    "./resolver": {
+      "types": "./dist/resolver.d.ts",
+      "import": "./dist/resolver.js",
+      "require": "./dist/resolver.cjs"
+    },
     "./components/island-animate-modal": {
       "types": "./dist/components/island-animate-modal/index.d.ts",
       "import": "./dist/components/island-animate-modal/index.js",
@@ -42,6 +47,12 @@
       "require": "./dist/components/island-navbar/index.cjs"
     },
     "./components/island-navbar/style.css": "./dist/style.css",
+    "./components/island-text": {
+      "types": "./dist/components/island-text/index.d.ts",
+      "import": "./dist/components/island-text/index.js",
+      "require": "./dist/components/island-text/index.cjs"
+    },
+    "./components/island-text/style.css": "./dist/style.css",
     "./style.css": "./dist/style.css"
   },
   "scripts": {
